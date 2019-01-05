@@ -46,7 +46,7 @@ Copy .env.example to .env and set variables
   docker-compose up -d
 ```
 
-## Generate key
+## Instal dependencies && generate key
 
 ```bash
   docker-compose exec app bash -c 'yarn install && adonis key:generate'
@@ -57,6 +57,9 @@ Copy .env.example to .env and set variables
 ```bash
   docker-compose restart
 ```
+
+## Open your app in browser
+For example: http://my-adonis-app.loc/
 
 ## Migrations
 
@@ -86,4 +89,15 @@ Or selected container
 
 ```bash
   docker-compose logs -f app
+```
+
+Troubleshooting
+If you get nginx "Not found error":
+```bash
+  docker-compose restart
+```
+
+Or view logs and find bugs
+```bash
+  docker-compose logs -f web
 ```
