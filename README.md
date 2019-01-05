@@ -19,12 +19,12 @@ Use the adonis command to install the blueprint
 adonis new yardstick --blueprint=https://github.com/reg2005/adonis-api-app
 ```
 
-##Start
+## Start
 ```bash
   docker-compose up -d
 ```
 
-##Install
+## Install
 
 ```bash
   docker-compose exec app bash -c 'yarn install'
