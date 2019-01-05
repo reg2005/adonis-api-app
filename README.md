@@ -29,6 +29,10 @@ And set it in /etc/hosts
 ## Setup nginx reverse proxy
 Please copy ./docker/reverseProxy folder in global env. NginxReverseProxy listen 80 port and proxying traffic to your app.
 Use it as one instance!
+```bash
+  cd yourNginxReverseFolder
+  docker-compose up -d
+```
 
 ## Make environment
 Copy .env.example to .env and set variables
@@ -45,7 +49,7 @@ Copy .env.example to .env and set variables
 ## Generate key
 
 ```bash
-  docker-compose exec app bash -c 'adonis key:generate'
+  docker-compose exec app bash -c 'yarn install && adonis key:generate'
 ```
 
 ## Restart conatiners
