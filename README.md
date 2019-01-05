@@ -1,23 +1,4 @@
-## Setup
-
-Use the adonis command to install the blueprint
-
-```bash
-adonis new yardstick --blueprint=https://github.com/reg2005/adonis-api-app
-```
-
-###Start
-```bash
-  docker-compose up -d
-```
-
-###Install
-
-```bash
-  docker-compose exec app bash -c 'yarn install'
-```
-
-# Adonis API application
+# Adonis API with production-ready docker-compose application
 
 This is the boilerplate for creating an API server in AdonisJs, it comes pre-configured with.
 
@@ -30,10 +11,26 @@ This is the boilerplate for creating an API server in AdonisJs, it comes pre-con
 7. Kue (Queue)
 8. Swagger 2 docs (./docs/swagger)
 
-or manually clone the repo and then run `npm install`.
+## Setup
 
+Use the adonis command to install the blueprint
 
-### Migrations
+```bash
+adonis new yardstick --blueprint=https://github.com/reg2005/adonis-api-app
+```
+
+##Start
+```bash
+  docker-compose up -d
+```
+
+##Install
+
+```bash
+  docker-compose exec app bash -c 'yarn install'
+```
+
+## Migrations
 
 Run the following command to run startup migrations.
 
